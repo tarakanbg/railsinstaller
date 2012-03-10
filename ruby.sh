@@ -6,7 +6,7 @@
 echo "Please enter your email (to be used for configuring Git): "
 read input_email
 echo "Please enter your full name (to be used for configuring Git): "
-read input_name
+read -e input_name
 
 # Install the requisite Ubuntu packages
 sudo apt-get install -y git-core wget curl gcc checkinstall libxml2-dev libxslt-dev sqlite3 libsqlite3-dev libcurl4-openssl-dev libc6-dev libssl-dev libmysql++-dev make build-essential zlib1g-dev libicu-dev redis-server nodejs openssh-server libreadline-dev
