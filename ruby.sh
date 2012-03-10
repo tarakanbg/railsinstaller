@@ -1,6 +1,6 @@
 # RailsInstaller shell script for installing Ruby & Rails on Ubuntu systems
 # by Svilen Vassilev, rubystudio.net
-# read LICENCE file for details
+# read LICENSE file for details
 
 #Ask for user details to be used by Git
 echo "Please enter your email (to be used for configuring Git): "
