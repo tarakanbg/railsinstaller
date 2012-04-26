@@ -13,14 +13,14 @@ A basic shell script for installing Ruby & Rails on Ubuntu
 
 ### Installing via wget/curl
 
-wget https://github.com/tarakanbg/railsinstaller/zipball/master
-tar xfvz master
-cd master/tarakanbg-railsinstaller-[commit_id]
+wget https://github.com/tarakanbg/railsinstaller/zipball/master  
+tar xfvz master  
+cd master/tarakanbg-railsinstaller-[commit_id]  
 chmod +x ruby.sh    
 ./ruby.sh    
 
 ### Installing via git
 
-git clone git://github.com/tarakanbg/railsinstaller.git
+git clone git://github.com/tarakanbg/railsinstaller.git  
 cd railsinstaller    
 ./ruby.sh    
