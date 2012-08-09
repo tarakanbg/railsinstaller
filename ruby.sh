@@ -9,7 +9,7 @@ echo "Please enter your first and last names (to be used for configuring Git): "
 read input_first_name input_last_name
 
 # Install the requisite Ubuntu packages
-sudo apt-get install -y git-core wget curl gcc checkinstall libxml2-dev libxslt-dev sqlite3 libsqlite3-dev libcurl4-openssl-dev libc6-dev libssl-dev libmysql++-dev make build-essential zlib1g-dev libicu-dev redis-server nodejs openssh-server libreadline-dev
+sudo apt-get install -y git-core wget curl gcc checkinstall libxml2-dev libxslt-dev sqlite3 libsqlite3-dev libcurl4-openssl-dev libc6-dev libssl-dev libmysql++-dev make build-essential zlib1g-dev libicu-dev redis-server nodejs openssh-server libreadline-dev wkhtmltopdf
 
 # Configure Git
 git config --global user.email $input_email
@@ -20,7 +20,7 @@ wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p290.tar.gz
 tar xfvz ruby-1.9.2-p290.tar.gz
 cd ruby-1.9.2-p290
 ./configure
-make
+sudo make
 sudo make install
 
 # Update rubygems
@@ -32,4 +32,3 @@ sudo gem install rails
 
 # Return to user home directory
 cd ~
-
