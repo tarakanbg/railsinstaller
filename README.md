@@ -2,7 +2,7 @@
 
 A basic shell script for installing Ruby & Rails on Ubuntu
 
-* Tested and compatible with Ubuntu 12.04, 11.10
+* Tested and compatible with Ubuntu 12.04, 11.10, Linux Mint 13
 * Installs the prerequisite Ubuntu packages
 * Downloads and compiles Ruby 1.9.3
 * Updates rubygems to the latest version
@@ -13,11 +13,12 @@ A basic shell script for installing Ruby & Rails on Ubuntu
 
 ### Installing via wget/curl
 ```sh
-wget https://github.com/tarakanbg/railsinstaller/zipball/master  
-tar xfvz master  
-cd master/tarakanbg-railsinstaller-[commit_id]  
-chmod +x ruby.sh    
-./ruby.sh    
+# via `curl`
+curl -L https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh > ruby.sh; chmod +x ruby.sh; ./ruby.sh; rm ruby.sh
+
+
+# via `wget`
+wget --no-check-certificate https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh -O - > ruby.sh; chmod +x ruby.sh; ./ruby.sh; rm ruby.sh
 ```
 ### Installing via git
 ```sh
