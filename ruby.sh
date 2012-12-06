@@ -16,9 +16,9 @@ git config --global user.email $input_email
 git config --global user.name "$input_first_name $input_last_name"
 
 # Download and install Ruby 1.9.2
-wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p194.tar.gz
-tar xfvz ruby-1.9.3-p194.tar.gz
-cd ruby-1.9.3-p194
+wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p327.tar.gz
+tar xfvz ruby-1.9.3-p327.tar.gz
+cd ruby-1.9.3-p327.tar.gz
 ./configure
 sudo make
 sudo make install
