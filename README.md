@@ -6,7 +6,7 @@ A basic shell script for installing Ruby & Rails on Ubuntu & derivates
 * Installs the prerequisite Ubuntu packages
 * Downloads and compiles Ruby 1.9.3
 * Updates rubygems to the latest version
-* Installs the latest versions of rake and Rails
+* Installs the latest versions of rake, bundler and Rails
 * Distributed under the MIT license
 
 ## Usage
@@ -28,4 +28,4 @@ cd railsinstaller
 ```
 
 curl -LO https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh && bash ruby.sh
-wget --no-check-certificate -O https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh && bash ruby.sh
+wget --no-check-certificate https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh && bash ruby.sh
