@@ -29,9 +29,7 @@ sudo make install
 sudo gem update --system
 
 # Instal rake and rails
-sudo gem install rake
-sudo gem install bundler
-sudo gem install rails
+sudo gem install rake bundler rails
 
 # Return to user home directory
 cd ~
