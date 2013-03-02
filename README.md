@@ -27,4 +27,5 @@ cd railsinstaller
 ./ruby.sh
 ```
 
-curl -L https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh && bash ruby.sh
+curl -LO https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh && bash ruby.sh
+wget --no-check-certificate -O https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh && bash ruby.sh
