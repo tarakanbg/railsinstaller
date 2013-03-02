@@ -18,13 +18,21 @@ sudo apt-get install -y git-core wget curl gcc checkinstall libxml2-dev libxslt-
 git config --global user.email $input_email
 git config --global user.name "$input_first_name $input_last_name"
 
+echo ""
+echo "_______________________________________"
+echo ""
+echo ""
+
+# Choose Ruby version to download and compile
 PS3='Please enter your desired Ruby version: '
 options=("Ruby 1.9.3" "Ruby 2.0.0" "Quit")
 select opt in "${options[@]}"
 do
   case $opt in
     "Ruby 1.9.3")
-      echo "You chose Ruby 1.9.3"
+      echo ""
+      echo "You chose Ruby 1.9.3! Installing...."
+      echo ""
       # Download and install Ruby 1.9.3
       wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p392.tar.gz
       tar xfvz ruby-1.9.3-p392.tar.gz
@@ -40,10 +48,13 @@ do
       rm -rf ruby-1.9.3-p392
       rm ruby-1.9.3-p392.tar.gz
       rm ruby.sh
+      break
       ;;
 
     "Ruby 2.0.0")
-      echo "You chose Ruby 2.0.0"
+      echo ""
+      echo "You chose Ruby 2.0.0! Installing..."
+      echo ""
       # Download and install Ruby 2.0.0
       wget http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p0.tar.gz
       tar xfvz ruby-2.0.0-p0.tar.gz
@@ -59,6 +70,7 @@ do
       rm -rf ruby-2.0.0-p0
       rm ruby-2.0.0-p0.tar.gz
       rm ruby.sh
+      break
       ;;
 
     "Quit")
