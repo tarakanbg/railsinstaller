@@ -19,8 +19,10 @@ git config --global user.email $input_email
 git config --global user.name "$input_first_name $input_last_name"
 
 echo ""
-echo "_______________________________________"
+echo "________________________________________"
 echo ""
+echo ">>  SELECT A RUBY VERSION TO INSTALL  <<"
+echo "________________________________________"
 echo ""
 
 # Choose Ruby version to download and compile
