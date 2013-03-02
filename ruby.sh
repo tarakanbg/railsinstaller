@@ -10,7 +10,6 @@ echo "Please enter your first and last names (to be used for configuring Git): "
 echo "(Leave blank if Git already installed)"
 read input_first_name input_last_name
 
-
 # Install the requisite Ubuntu packages
 sudo apt-get install -y git-core wget curl gcc checkinstall libxml2-dev libxslt-dev sqlite3 libsqlite3-dev libcurl4-openssl-dev libc6-dev libssl-dev libmysql++-dev make build-essential zlib1g-dev libicu-dev redis-server nodejs openssh-server libreadline-dev libyaml-0-2 libyaml-dev libncurses5-dev zlib1g-dev libgdbm-dev 
 
@@ -43,8 +42,8 @@ do
       sudo make
       sudo make install
 
-      # Return to user home directory
-      cd ~
+      # Return to initial directory
+      cd ..
 
       # Delete leftovers
       rm -rf ruby-1.9.3-p392
@@ -65,8 +64,8 @@ do
       sudo make
       sudo make install
 
-      # Return to user home directory
-      cd ~
+      # Return to initial directory
+      cd ..
 
       # Delete leftovers
       rm -rf ruby-2.0.0-p0
