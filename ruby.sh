@@ -38,6 +38,7 @@ cd ~
 
 # Delete leftovers
 rm -rf ruby-1.9.3-p392
+rm ruby-1.9.3-p392.tar.gz
 rm ruby.sh
 
 # Goodbye message
