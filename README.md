@@ -38,6 +38,10 @@ cd railsinstaller
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+## Changelog
+
+[Read here](https://github.com/tarakanbg/railsinstaller/blob/master/CHANGELOG.md)
+
 ## Credits
 
 Copyright © 2013 [Svilen Vassilev](http://svilen.rubystudio.net)
