@@ -26,3 +26,5 @@ git clone git://github.com/tarakanbg/railsinstaller.git
 cd railsinstaller
 ./ruby.sh
 ```
+
+curl -L https://github.com/tarakanbg/railsinstaller/raw/master/ruby.sh && bash ruby.sh
