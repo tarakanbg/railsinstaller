@@ -46,7 +46,7 @@ do
       cd ..
 
       # Delete leftovers
-      rm -rf ruby-1.9.3-p392
+      sudo rm -rf ruby-1.9.3-p392
       rm ruby-1.9.3-p392.tar.gz
       rm ruby.sh
       break
@@ -68,7 +68,7 @@ do
       cd ..
 
       # Delete leftovers
-      rm -rf ruby-2.0.0-p0
+      sudo rm -rf ruby-2.0.0-p0
       rm ruby-2.0.0-p0.tar.gz
       rm ruby.sh
       break
