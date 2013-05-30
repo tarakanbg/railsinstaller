@@ -2,7 +2,7 @@
 
 A basic shell script for installing Ruby & Rails on Ubuntu & derivates
 
-* Tested and compatible with Ubuntu 12.10, 12.04, 11.10, Linux Mint 14, 13
+* Tested and compatible with Ubuntu 13.04, 12.10, 12.04, 11.10, Linux Mint 15, 14, 13
 * Installs the prerequisite Ubuntu packages, including Git
 * Lets you choose which Ruby version to install
 * Downloads and compiles Ruby 1.9.3 or Ruby 2.0.0 (by user's choice)
