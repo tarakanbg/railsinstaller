@@ -5,6 +5,7 @@
 * updated ruby versions as follows:
 * Ruby 1.9.3: patchlevel 429
 * Ruby 2.0.0: patchlevel 195
+* gem documentation (ri, rdoc) no longer installed by default
 
 
 ## v. 0.4
