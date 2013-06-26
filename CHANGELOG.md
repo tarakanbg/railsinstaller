@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v. 0.5
+
+* updated ruby versions as follows:
+* Ruby 1.9.3: patchlevel 429
+* Ruby 2.0.0: patchlevel 195
+
+
 ## v. 0.4
 
 * better install flow

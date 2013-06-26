@@ -35,9 +35,9 @@ do
       echo "You chose Ruby 1.9.3! Installing...."
       echo ""
       # Download and install Ruby 1.9.3
-      wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p392.tar.gz
-      tar xfvz ruby-1.9.3-p392.tar.gz
-      cd ruby-1.9.3-p392
+      wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p429.tar.gz
+      tar xfvz ruby-1.9.3-p429.tar.gz
+      cd ruby-1.9.3-p429
       ./configure
       sudo make
       sudo make install
@@ -46,8 +46,8 @@ do
       cd ..
 
       # Delete leftovers
-      sudo rm -rf ruby-1.9.3-p392
-      rm ruby-1.9.3-p392.tar.gz
+      sudo rm -rf ruby-1.9.3-p429
+      rm ruby-1.9.3-p429.tar.gz
       rm ruby.sh
       break
       ;;
@@ -57,9 +57,9 @@ do
       echo "You chose Ruby 2.0.0! Installing..."
       echo ""
       # Download and install Ruby 2.0.0
-      wget http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p0.tar.gz
-      tar xfvz ruby-2.0.0-p0.tar.gz
-      cd ruby-2.0.0-p0
+      wget ftp://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p195.tar.gz
+      tar xfvz ruby-2.0.0-p195.tar.gz
+      cd ruby-2.0.0-p195
       ./configure
       sudo make
       sudo make install
@@ -68,8 +68,8 @@ do
       cd ..
 
       # Delete leftovers
-      sudo rm -rf ruby-2.0.0-p0
-      rm ruby-2.0.0-p0.tar.gz
+      sudo rm -rf ruby-2.0.0-p195
+      rm ruby-2.0.0-p195.tar.gz
       rm ruby.sh
       break
       ;;
