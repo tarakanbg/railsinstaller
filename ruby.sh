@@ -86,7 +86,7 @@ done
 sudo gem update --system
 
 # Install rake and rails
-sudo gem install rake bundler rails
+sudo gem install rake bundler rails --no-ri --no-rdoc
 
 # Say goodbye
 echo ""
