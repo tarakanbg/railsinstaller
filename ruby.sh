@@ -85,6 +85,9 @@ done
 # Update rubygems
 sudo gem update --system
 
+# Workaround Ubuntu & Rubygems pemissions bug
+sudo chmod -R 777 /usr/local/lib/ruby/gems/
+
 # Install rake and rails
 sudo gem install rake bundler rails --no-ri --no-rdoc
 
