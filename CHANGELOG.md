@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v. 0.6
+
+* updated ruby versions as follows:
+* Ruby 1.9.3: patchlevel 484
+* Ruby 2.1.0
+
 ## v. 0.5
 
 * updated ruby versions as follows:

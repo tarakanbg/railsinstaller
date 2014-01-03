@@ -26,7 +26,7 @@ echo ""
 
 # Choose Ruby version to download and compile
 PS3='Please enter your desired Ruby version: '
-options=("Ruby 1.9.3" "Ruby 2.0.0" "Quit")
+options=("Ruby 1.9.3" "Ruby 2.1.0" "Quit")
 select opt in "${options[@]}"
 do
   case $opt in
@@ -35,9 +35,9 @@ do
       echo "You chose Ruby 1.9.3! Installing...."
       echo ""
       # Download and install Ruby 1.9.3
-      wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p429.tar.gz
-      tar xfvz ruby-1.9.3-p429.tar.gz
-      cd ruby-1.9.3-p429
+      wget http://cache.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p484.tar.gz
+      tar xfvz ruby-1.9.3-p484.tar.gz
+      cd ruby-1.9.3-p484
       ./configure
       sudo make
       sudo make install
@@ -46,20 +46,20 @@ do
       cd ..
 
       # Delete leftovers
-      sudo rm -rf ruby-1.9.3-p429
-      rm ruby-1.9.3-p429.tar.gz
+      sudo rm -rf ruby-1.9.3-p484
+      rm ruby-1.9.3-p484.tar.gz
       rm ruby.sh
       break
       ;;
 
-    "Ruby 2.0.0")
+    "Ruby 2.1.0")
       echo ""
-      echo "You chose Ruby 2.0.0! Installing..."
+      echo "You chose Ruby 2.1.0! Installing..."
       echo ""
       # Download and install Ruby 2.0.0
-      wget ftp://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p195.tar.gz
-      tar xfvz ruby-2.0.0-p195.tar.gz
-      cd ruby-2.0.0-p195
+      wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.tar.gz
+      tar xfvz ruby-2.1.0.tar.gz
+      cd ruby-2.1.0
       ./configure
       sudo make
       sudo make install
@@ -68,8 +68,8 @@ do
       cd ..
 
       # Delete leftovers
-      sudo rm -rf ruby-2.0.0-p195
-      rm ruby-2.0.0-p195.tar.gz
+      sudo rm -rf ruby-2.1.0
+      rm ruby-2.1.0.tar.gz
       rm ruby.sh
       break
       ;;
