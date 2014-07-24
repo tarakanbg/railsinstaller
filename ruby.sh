@@ -26,7 +26,7 @@ echo ""
 
 # Choose Ruby version to download and compile
 PS3='Please enter your desired Ruby version: '
-options=("Ruby 1.9.3" "Ruby 2.1.0" "Quit")
+options=("Ruby 1.9.3" "Ruby 2.1.2" "Quit")
 select opt in "${options[@]}"
 do
   case $opt in
@@ -52,14 +52,14 @@ do
       break
       ;;
 
-    "Ruby 2.1.0")
+    "Ruby 2.1.2")
       echo ""
-      echo "You chose Ruby 2.1.0! Installing..."
+      echo "You chose Ruby 2.1.2! Installing..."
       echo ""
-      # Download and install Ruby 2.0.0
-      wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.tar.gz
-      tar xfvz ruby-2.1.0.tar.gz
-      cd ruby-2.1.0
+      # Download and install Ruby 2.1.2
+      wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz
+      tar xfvz ruby-2.1.2.tar.gz
+      cd ruby-2.1.2
       ./configure
       sudo make
       sudo make install
@@ -68,8 +68,8 @@ do
       cd ..
 
       # Delete leftovers
-      sudo rm -rf ruby-2.1.0
-      rm ruby-2.1.0.tar.gz
+      sudo rm -rf ruby-2.1.2
+      rm ruby-2.1.2.tar.gz
       rm ruby.sh
       break
       ;;
@@ -87,7 +87,7 @@ echo "Updating rubygems..."
 sudo gem update --system
 
 # Workaround Ubuntu & Rubygems pemissions bug
-sudo chmod -R 777 /usr/local/lib/ruby/gems/
+#sudo chmod -R 777 /usr/local/lib/ruby/gems/
 
 # Install rake and rails
 echo "Installing bundler and rails, please be patient..."
