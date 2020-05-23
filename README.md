@@ -46,9 +46,4 @@ cd railsinstaller
 
 Copyright © 2014 [Svilen Vassilev](http://svilen.rubystudio.net)
 
-*If you find my work useful or time-saving, you can endorse it or buy me a cup of coffee:*
-
-[![endorse](http://api.coderwall.com/svilenv/endorsecount.png)](http://coderwall.com/svilenv)
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5FR7AQA4PLD8A)
-
 Released under the [MIT LICENSE](https://github.com/tarakanbg/railsinstaller/blob/master/LICENSE)
